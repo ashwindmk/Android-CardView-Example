@@ -14,13 +14,7 @@ import java.util.List;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHolder> {
 
-    public interface CardClickListener {
-        void onClick(View view, int position);
-        void onLongClick(View view, int position);
-    }
-
     private List<Movie> moviesList;
-    private static CardClickListener cardClickListener;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, year, genre;
